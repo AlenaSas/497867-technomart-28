@@ -7,26 +7,31 @@
   <body>
     
     <header>
-      <section class="top-line">
+
+      <div class="top-line">
         <a class="logo">
-          <img src="" width="" height="" alt="Логотип Техномарт" >
+          <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип Техномарт">
         </a>
-        <div class="search">Поиск:</div>
-        <a class="bookmarks">Закладки: <span>0</span></a>
-        <a class="cart">Корзина: <span>0</span></a>
+        <form class="search">
+          <label for="search">Поиск: <input type="text" id="search" name="search"></label>
+        </form>
+        <a class="bookmarks">Закладки: 0</a>
+        <a class="cart">Корзина: 0</a>
         <a class="checkout">Оформить заказ</a>
-      </section>
-      <section class="middle-line">
-          <i class="about">Интернет-магазин <br>строительных материалов<br>и инструментов для ремонта</i>
+      </div>
+
+      <div class="middle-line">
+          <p class="about">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <div class="info">
           <a href="tel:+79183650707">+7 918 365 07 07</a>
           <adress>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</adress>
         </div>
         <ul>
-          <li><a class="login">Войти</a></li>
-          <li><a>Регистрация</a></li>
+          <li><a class="login" href="blank.html">Войти</a></li>
+          <li><a class="registration" href="blank.html">Регистрация</a></li>
         </ul>      
-      </section>
+      </div>
+
       <nav class="main-menu">
         <ul>
           <li><a href="index.html">Главная</a></li>
@@ -38,27 +43,56 @@
           <li><a href="blank.html">Контакты</a></li>
         </ul>
       </nav>
+
     </header>
 
     <main>
+
       <h1>Главная</h1>
-      <section class="materials">Материалы</section>
-      <section class="tools">Инструмент</section>
-      <section class="equipment">Техника</section>
-      <section class="discounts">Скидки 50%</section>
-      <section class="delivery">Доставка</section>
-      <section class="slider">Перфораторы</section>
-      <section class="popular-goods">Популярные товары</section>
-      <section class="popular-manufacturers">Популярные производители</section>
-      <section class="services">Сервисы</section>
-      <section class="about-company">Компания «Техномарт»</section>
-      <section class="contacts">Контакты</section>
+
+      <section class="main-content">
+        <div class="materials">Материалы</div>
+        <div class="tools">Инструмент</div>
+        <div class="equipment">Техника</div>
+        <div class="discounts">Скидки 50%</div>
+        <div class="delivery">Доставка</div>
+        <div class="slider">Перфораторы</div>
+      </section>
+
+      <section class="popular">
+        <div class="popular-goods">Популярные товары</div>
+        <div class="popular-manufacturers">Популярные производители</div>
+        <div class="services">Сервисы</div>
+      </section>
+      
+      <section class="about">
+
+        <div class="company">
+          <h2>Компания «Техномарт»</h2>
+          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+          <p>Мы можем доставить ваш товар в самые отдаленные точки России! Техномарт работает со многими транспортными компаниями:</p>
+          <ul>
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a href="blank.html">Подробнее о компании</a>
+        </div>
+
+        <div class="contacts">
+          <h2>Контакты</h2>
+          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+          <div class="map"><img src="http://placehold.it/300x158" width="300" height="158" alt="Карта проезда"></div>
+          <a href="blank.html">Заблудились? Напишите нам!</a>
+      </section>
+      
     </main>
 
     <footer>
-      <section class="top-footer">
+
+      <div class="top-footer">
         <a class="logo">
-          <img src="" width="" height="" alt="Логотип Техномарт" >
+          <img src="http://placehold.it/220x47" width="220" height="47" alt="Логотип Техномарт">
         </a>
         <ul class="menu1">
           <li><a href="blank.html">Компания</a></li>
@@ -74,9 +108,10 @@
           <li><a href="blank.html">Спецпредложения</a></li>
         </ul>        
         <address>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+79183650707">+7 918 365 07 07</a></address>
-      </section>
-      <section class="bottom-footer">
-        <div class="copyright">© 2010–2019 Компания «Техномарт»<br>Все права защищены</div>
+      </div>
+
+      <div class="bottom-footer">
+        <div class="copyright">© 2010–2019 Компания «Техномарт» Все права защищены</div>
         <div class="social-links">
           <a href="vk.com">vk</a>
           <a href="facebook.com">fb</a>
@@ -87,10 +122,12 @@
           <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </div>
         <div class="poveredby">
-          <p>Разработано:</p>
+          <span>Разработано:</span>
           <a href="htmlacademy.ru">htmlacademy.ru</a>
         </div>       
-      </section>
-    </footer>    
+      </div>
+
+    </footer> 
+
   </body>
 </html>
