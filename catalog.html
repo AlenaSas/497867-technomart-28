@@ -60,8 +60,19 @@
       <div class="wrapper">
         <div class="filters-panel">
           
-          <form action="handler.php">
+          <form>
             <legend>Фильтр:</legend>
+            <fieldset>
+              <div class="toddler">
+                <span class="horizontal-line">Тут будет горизонтальная линия</span>
+                <span class="circle"><span class="dot">Кружок</span></span>
+                <span class="circle"><span class="dot">Кружок</span></span>
+                <span></span>
+              </div>
+              <label for="min-price"><input type="text" id="min-price" name="min-price" placeholder="0"></label>
+              <span>&mdash;</span>
+              <label for="max-price"><input type="text" id="max-price" name="max-price" placeholder="30000"></label>
+            </fieldset>
             <fieldset>
              <legend>Производители:</legend>
              <label for="bosch"><input type="checkbox" id="bosch" name="bosch" placeholder="Bosch"></label>
@@ -81,9 +92,18 @@
         </div>
 
         <div class="items-panel">
-          <div class="sort-line">
-            <p>Сортировка:</p>
-          </div>
+
+          <form class="sort-line">
+            <legend>Сортировка:</legend>
+            <fieldset>
+              <label for="by-price"><input type="button" id="by-price" name="by-price" value="По цене"></label>
+              <label for="by-type"><input type="button" id="by-type" name="by-type" value="По типу"></label>
+              <label for="by-functional"><input type="button" id="by-functional" name="bby-functional" value="По функционалу"></label>
+              <a class="ascending" href="blank.html">&uarr;</a>
+              <a class="descending" href="blank.html">&darr;</a>
+            </fieldset>
+          </form>
+
           <ul class="items-list">
             <li>
               <img src="http://placehold.it/184x164" width="184" height="164" alt="Перфоратор BOSCH BFG 6000">
@@ -166,7 +186,12 @@
               <span class="new-price">25500P.</span>
             </li>
           </ul>
-          <div class="pagination"></div>
+          <div class="pagination">
+            <a href="" class="active-page">1</a>
+            <a href="blank.html">2</a>
+            <a href="blank.html">3</a>
+            <a href="blank.html">Следующая</a>
+          </div>
         </div>
       </div>
 
