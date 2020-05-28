@@ -48,10 +48,10 @@
 
     <main>
 
-      <h1>Главная</h1>
+      <h1 class="visually-hidden">Главная</h1>
 
       <section class="main-content">
-        <h2>Специфика нашей работы</h2>
+        <h2 class="visually-hidden">Специфика нашей работы</h2>
         <div class="materials">
           <h3><a href="blank.html">Материалы</a></h3>
           <span>На любой вкус</span>
@@ -254,7 +254,37 @@
         </div>       
       </div>
 
-    </footer> 
+    </footer>
+    
+    <div class="popup popup_writeus">
+      <button type="button close_popup">X</button> <!--картинку с крестиком добавлю через css-->
+      <form>
+        <label for="name">Ваше имя:</label>
+        <input type="text" id="name" name="name" placeholder="Имя Фамилия">
+        <label for="email">Ваш e-mail:</label>
+        <input type="text" id="email" name="email" placeholder="email@example.com">
+        <label for="message">Текст письма:</label>
+        <textarea id="message" placeholder="В свободной форме"></textarea>
+        <div class="wrap_submit_line">
+          <label for="submit_message"><input type="submit" id="submit_message" name="submit_message" value="Оформить заказ"></label>
+        </div>
+      </form>
+
+    </div>
+
+    <div class="popup popup_map">
+      <button type="button close_popup">X</button> <!--картинку с крестиком добавлю через css-->
+      <img src="img/map_big.jpg" width="943" height="449" alt="Icon home" alt="Карта проезда">
+    </div>
+
+    <div class="popup added_to_card_popup">
+      <button type="button close_popup">X</button> <!--картинку с крестиком добавлю через css-->
+      <div class="message">Товар добавлен в корзину!</div>
+      <div class="wrap_submit_line">
+        <input type="submit" id="checkout" name="checkout" value="Оформить заказ">
+        <a href="catalog.html" class="white_button">Продолжить покупки</a>
+      </div>
+    </div>
 
   </body>
 </html>
